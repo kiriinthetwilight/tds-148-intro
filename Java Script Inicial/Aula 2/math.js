@@ -90,5 +90,30 @@ function media() {
             msgIMC.textContent = "Obesidade grave";
             msgIMC.style.color = "darkred";
         }
+        function checkMajority() {
+            var wasBorn = document.getElementById("clientBirth").valueAsNumber;
+            var res = document.getElementById("result");
+            var clientAge = document.getElementById("clientAge");
+        
+            if (isNaN(wasBorn)) {
+                res.textContent = "Type only numbers ❌";
+                res.style.color = "red";
+                return;
+            }
+        
+            const thisYear = new Date().getFullYear();
+            const age = thisYear - wasBorn;
+        
+            if (age >= 18) {
+                res.textContent = `✔ Over 18, ENTRY ALLOWED - ${age} years old`;
+                res.style.color = "green";
+                clientAge.textContent = `🎉 Você tem ${age} anos e pode entrar na balada!`;
+            } else {
+                res.textContent = `❌ Under 18, NOT ALLOWED - ${age} years old`;
+                res.style.color = "orange";
+                clientAge.textContent = `🚫 Você tem apenas ${age} anos e não pode entrar na balada.`;
+            }
+        }
+        
     }
     
