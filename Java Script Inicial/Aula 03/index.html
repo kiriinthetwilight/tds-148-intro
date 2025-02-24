@@ -64,7 +64,32 @@
         <section id="s4">
             IP: 12376213472637856
         </section>
+        <footer>
+            <a target="_blank" href="https://www.instagram.com/"><img width="30px" height="auto" src="./assets/logo Instagram.jpeg" alt="Instagram"></a>
+              <a target="_blank" href="https://www.facebook.com/login"><img width="30px" height="auto" src="./assets/facebook logo.png" alt="Facebook"></a>
+              <a target="_blank" href="https://x.com/"><img width="30px" height="auto" src="./assets/twitter logo.png" alt="X"></a>
+              <a target="_blank" href="https://br.linkedin.com/"><img width="30px" height="auto" src="./assets/whatsapp logo.png" alt="WhatsApp"></a>
+          </footer>
     </main>
+    <script>
+        function enviar(){
+          document.getElementById("nome").style.border = "1px solid black"
+          document.getElementById("assunto").style.border = "1px solid black"
+          const nome = document.getElementById("nome").value
+          const assunto = document.getElementById("assunto").value
+
+          if(!nome || !assunto){
+            document.getElementById("nome").style.border("2px solid red")
+            document.getElementById("assunto").style.border("2px solid red")
+            return
+          }
+
+          const mensagem = `Gostaria de entrar em contato!!! \n\nNome: ${nome} \nAssunto: ${assunto}`
+          const msg = encodeURIComponent(mensagem)
+          window.location.href = `https://wa.me/5541987446352?text=${msg}`
+
+        }
+      </script>
 </body>
 
 </html>
