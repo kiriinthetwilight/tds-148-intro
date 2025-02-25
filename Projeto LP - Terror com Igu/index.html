@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siren Head - Horror Site</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head> <!-- Head basicament é a cabeça do codigo onde ficam os links. -->
+<body>  <!-- é o "corpo" do site, é oq será exibido pro usuario. -->
+    <header> <!-- é como se fosse uma barra de navegação pelo site. -->
+        <nav>
+            <ul> <!-- ul é uma lista desordenada q n tem uma ordem especifica -->
+               <!-- li é uma ordem ordenada --> 
+                <li><a href="#home">Início</a></li>
+                <li><a href="#about">A Lenda</a></li>
+                <li><a href="#gallery">Galeria</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="banner">
+        <h1>SIREN HEAD</h1>
+        <p>O som das sirenes nunca foi tão assustador...</p>
+    </section>
+    
+    <section id="about">
+        <h2>A Lenda</h2>
+        <p>Uma criatura alta, esquelética, com sirenes no lugar da cabeça. Muitos dizem tê-lo visto, poucos sobreviveram...</p>
+    </section>
+    
+    <section id="gallery">
+        <h2>Galeria</h2>
+        <div class="slider">
+            <div class="slide"><img src="./assets/SirenHead.jpeg" alt="Siren Head"></div>
+            <div class="slide"><img src="./assets/SirenHead2.jpg" alt="Siren Head"></div>
+            <div class="slide"><img src="./assets/SirenHead3.jpg" alt="Siren Head"></div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contato</h2>
+        <p>Alguma história de terror para contar? Envie para nós...</p>
+        <form>
+            <input type="text" placeholder="Nome" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Sua história assustadora..."></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Siren Head Horror Site - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
