@@ -1,31 +1,30 @@
-// Variáveis do Slider
-let index = 0;
-const slides = document.querySelectorAll(".slide");
+var proximobtn = document.querySelector('.proximo')
+var previabtn = document.querySelector('.previa')
+var carrossel = document.querySelector('.carrossel')
+var lista = document.querySelector('.lista')
+var item = document.querySelector('.item')
+tempo = document.querySelector('.carrosel .tempo')
 
-function showSlides() {
-    slides.forEach((slide, i) => {
-        slide.style.display = i === index ? "block" : "none";
-    });
-    index = (index + 1) % slides.length;
+let timeRunning = 3000
+let timeAutoNext = 7000
+
+proximobtn.onclick = function(){
+    showSlider('proximo')
 }
 
-// Alterna os slides a cada 3 segundos
-setInterval(showSlides, 3000);
-showSlides();
+previabtn.onclick = function(){
+    showSlider('previa')
+}
 
-// Efeito de Hover nos Cards
-const cards = document.querySelectorAll(".card");
+let runTimeOut
 
-cards.forEach(card => {
-    card.addEventListener("mouseover", () => {
-        card.style.transform = "scale(1.1)";
-        card.style.backgroundColor = "#b90504"; // Muda a cor no hover
-        card.style.color = "#f6f6f6";
-    });
+let runNextAuto = setTimeout(() =>{
+    proximobtn.click()
+} )
 
-    card.addEventListener("mouseout", () => {
-        card.style.transform = "scale(1)";
-        card.style.backgroundColor = "#e8e8e8"; // Volta à cor original
-        card.style.color = "#333333";
-    });
-});
+function resetTimeAnimation(){
+    runningTime.style.animation = 'none'
+    runningTime.offssetHeight
+    runningTime.style.animation = null
+    runningTime.style.animation = 'runningTime 7s linear 1 forwards'
+}
