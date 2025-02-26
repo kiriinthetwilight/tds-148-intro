@@ -28,3 +28,25 @@ function resetTimeAnimation(){
     runningTime.style.animation = null
     runningTime.style.animation = 'runningTime 7s linear 1 forwards'
 }
+
+function showSlider(type){
+    let sliderItemsDom = list.querySelectorAll('.carrossel .lista .item')
+    if(type === 'next'){
+        list.appendChild(sliderItemsDom[0])
+        carrossel.classList.add('next')
+    }else{
+        list.prepend(sliderItemsDom[sliderItemsDom.length - 1])
+        carrossel.classList.add('prev')
+    }
+
+    clearTimeout(runTimeOut)
+    runTimeOut = setTimeout(() => {
+        proximobtn.click()
+    }, timeAutoNext)
+
+    resetTimeAnimation() // Reseta o tempo corrido da animação
+
+}
+
+// Começa a animação inicial
+resetTimeAnimation()
