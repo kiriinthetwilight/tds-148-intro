@@ -1,0 +1,304 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+
+    --preto: #000000;
+    --vermelho-escuro: #9F111B;
+    --vermelho: #B11623;
+    --cinza-escuro: #292C37;
+    --braco-cinza: #CCCCCC;
+}
+
+.nav-link {
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--vermelho-escuro);
+}
+
+.img-logo {
+    width: 70px;
+    height: auto;
+}
+
+body {
+    padding-top: 4%;
+    flex-wrap: wrap;
+}
+
+#s1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-image: url(./images/jare-direita-fundo-preto.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset;
+}
+
+.carousel-entrada-site {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: 400px;
+
+}
+
+.carousel {
+    padding-top: 15%;
+    padding-bottom: 4%;
+    width: 50%;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 400px;
+    gap: 80px;
+}
+
+.br {
+    border-radius: 30px;
+}
+
+.s1-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+    border-radius: 20px;
+    padding-top: 100px;
+}
+
+.cartao-inicio {
+    flex-wrap: wrap;
+    min-height: 70px;
+    max-height: 70px;
+}
+
+.cartao-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    min-height: 300px;
+    max-height: 300px;
+
+}
+
+.cartao-info h2 {
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--vermelho-escuro);
+    flex-wrap: wrap;
+}
+
+.historia-scp-org {
+    color: #CCCCCC !important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    flex-wrap: wrap;
+
+}
+
+#s2 {
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    padding-top: 8%;
+    padding-bottom: 8%;
+}
+
+.cartao-lenda {
+    background-color: #CCCCCC;
+    width: 16rem;
+    height: 450px;
+    box-shadow: #B11623 0px 54px 55px, #B11623 0px -12px 30px, #B11623 0px 4px 6px, #B11623 0px 12px 13px, #B11623 0px -3px 5px;
+    border: 2px solid var(--vermelho);
+    border-radius: 10px;
+    /* padding: 10px; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.cartao-informacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+    max-height: 300px;
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--vermelho-escuro)
+}
+
+.cartao-informacao h2 {
+    max-height: 50px;
+    min-height: 50px;
+}
+
+.historia-scp {
+    color: #000000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 10px;
+}
+
+.cartao-informacao button {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--vermelho-escuro);
+    border: 2px solid var(--vermelho);
+    transition: all 200ms ease-in-out;
+}
+
+.cartao-informacao button:hover {
+    color: var(--vermelho);
+    border: 2px solid var(--vermelho-escuro);
+    background: var(--preto);
+}
+
+#s3 {
+    background-image: url(./images/fundo\ floresta.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 7%;
+}
+
+.banner-relatos-pessoas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.banner-relatos-pessoas h2 {
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--vermelho-escuro)
+}
+
+.relatos {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+
+}
+
+.relatos h2 {
+    font-family: "Creepster", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--vermelho-escuro)
+}
+
+.relatos p {
+    color: #CCCCCC;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#s4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+    padding: 2vh 0px;
+    background-color: #000000;
+}
+
+.contato-wpp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #CCCCCC;
+    background-color: #000000;
+    font-family: "Creepster", serif;
+    width: 300px;
+    padding: 20px;
+    border: 2px solid var(--vermelho);
+    box-shadow: var(--vermelho) 0px 13px 27px -5px, var(--vermelho) 0px 8px 16px -8px;
+    border-radius: 5px;
+}
+
+.contato-wpp button {
+    font-family: "Creepster", serif;
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+    border: none;
+    background: none;
+    color: var(--vermelho-escuro);
+    border: 2px solid var(--vermelho);
+    transition: all 200ms ease-in-out;
+}
+
+.contato-wpp button:hover {
+    color: var(--vermelho-escuro);
+    border: 2px solid var(--vermelho);
+    background: var(--braco-cinza);
+}
+
+.contato-wpp input {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+}
+
+.contato-wpp input {
+    padding: 10px;
+    border-radius: 999px;
+    width: 100%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: black;
+    min-height: 80px;
+}
+
+footer img {
+    transition: all 500ms ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.0) rotate(10deg);
+}
